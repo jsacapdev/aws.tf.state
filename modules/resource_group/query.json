@@ -1,0 +1,13 @@
+{
+    "ResourceTypeFilters": [
+        "AWS::S3::Bucket"
+    ],
+    "TagFilters": [
+        {
+            "Key": "env",
+            "Values": [
+                "dev"
+            ]
+        }
+    ]
+}
