@@ -8,6 +8,12 @@
             "Values": [
                 "dev"
             ]
+        },
+        {
+            "Key": "terraform",
+            "Values": [
+                "true"
+            ]
         }
     ]
 }

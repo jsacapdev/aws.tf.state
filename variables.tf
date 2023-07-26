@@ -8,14 +8,20 @@ variable "aws_region" {
 variable "terraform_resource_group_name" {
 
   type    = string
-  default = "dev-tf-rg"
+  default = "rg-terraform-dev"
+}
+
+variable "terraform_s3_bucket" {
+
+  type    = string
+  default = "s3-terraform-dev"
 }
 
 variable "default_tags" {
   description = "Tags to apply to resources created by terraform module"
   type        = map(string)
   default = {
-    Terraform   = "true"
-    Environment = "dev"
+    env = "dev"
+    terraform = "true"
   }
 }
